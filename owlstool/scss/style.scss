@@ -1,0 +1,434 @@
+/*
+Theme Name: Owl Stool Store
+Version: 1.0
+Description: Child theme for WooThemes.
+Author: Tom Saulnier
+Author URI: http://www.semide.com
+Template: mystile
+*/
+
+@import url("../mystile/style.css");
+
+body {
+	color: #333333;
+}
+
+
+#header {
+  border-top-color:#E8E4E3;
+  border-top-style:solid;
+  border-top-width:1px;
+ margin-bottom:1em;
+ padding-bottom: 0;
+}
+
+  #header {
+    padding-bottom: 0 !important;
+    padding-top: 3.631em;
+  }
+
+#header hgroup {
+  margin-bottom:0 !important;
+  padding-bottom: 0;
+  position:relative;
+  height: 70px;
+}
+
+#header img {
+	margin-bottom: 0;
+}
+
+  #header #navigation ul.nav > li.current-menu-item > a,
+  #header #navigation ul.nav > li.current_page_item > a {
+    color: #cc0000 !important;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.25em;
+}
+
+.ad-image-description span { font-size: 16px!important; }
+  
+
+#owlid {
+	width: 70%;
+	float: left;
+	text-align: center;
+	font-size:  36pt;
+}
+
+#owlid a:hover {
+	color: #CC0000;
+}
+
+#owllist {
+	width: 18%;
+	float: left
+}
+
+
+#owllist ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#owllist li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+#owllist li:before {
+    content: "• ";
+    color: #CC0000; /* or whatever color you prefer */
+}
+
+
+#navigation { 
+ float: left;
+clear: both;
+  border-top-color:#E8E4E3 !important;
+  border-top-style:solid  !important;
+  border-top-width:1px  !important;
+  margin-bottom: 0  !important;
+  width: 100%;
+  
+  
+}
+
+
+#homefeatured ul.products li.product {
+    position: relative;
+    width: 48.1% !important;
+}
+
+
+
+
+.homelist ul {
+    list-style: none;
+    line-height: 2.75em;
+   	font-family: Raleway; 
+}
+
+.homelist ul li:before {
+    content: "";
+    line-height: 1em;
+    width: .5em;
+    height: .5em;
+    background-color: #d90000;
+    float: left;
+    margin: 1.15em .75em 0;
+    border-radius: 50%;
+}
+
+.homelist h3 {
+	font-family: Raleway;
+	font-weight: 700;
+}
+
+
+
+span.ginput_product_price,  span.ginput_product_price_label {
+    display: none;
+}
+
+.homelist {
+	font-size: 14px;
+	width: 86%;
+	margin: 0 auto;
+
+}
+
+.homelist ul li {
+
+	margin-bottom: 14px;
+}
+
+
+.luvyr {
+	font-family: italianno;
+	text-align: center;
+	margin: 0 !important;
+	color: #CC0000;
+	font-size: .85em;
+	line-height: .85em;
+}
+
+
+#salediv ul.products li.product {
+    position: relative;
+    width: 100%;
+}
+
+
+.salebadge a {
+	color: #CC0000;
+}
+
+.price ins {
+    color: #ff4800;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1120px) {
+
+
+#navigation ul.nav li {
+    padding: 0 20px !important;
+ }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1120px) {
+
+#owlid {
+    float: left;
+    font-size: 32pt;
+    text-align: center;
+    width: 60%;
+}
+
+#owlid  a {
+	font-weight: normal !important;
+	
+}
+
+
+
+
+}
+
+#header #navigation ul.nav {
+    clear: left;
+    float: left;
+    left: 50%;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+#navigation ul.nav li {
+    display: block;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 54px;
+    position: relative;
+    right: 50%;
+}
+
+ul.nav ul li {
+    float: none;
+	right: 15px !important;
+}
+
+
+#header #navigation ul.nav > li a {
+
+    font-weight: normal !important;
+    padding: 0.53em .95em;
+}
+
+
+
+.newsbox
+{
+	padding: 20px;
+	border: 4px #333 double;
+	
+}
+
+.newsbox h2
+{
+	text-align: center;
+	
+}
+
+
+.newsbox input.button {
+	background: none;
+	border: 4px #333 double;	
+	color: #333333;
+	 box-shadow: none;
+    text-shadow: none;	 
+}
+
+.newsbox .gform_wrapper .gform_footer {
+    clear: both;
+    margin: 16px 0 0;
+    padding: 16px 0 10px;
+    text-align: center;
+}
+
+#navigation ul {
+  margin: 0  !important;  
+}
+
+#navigation ul li{
+
+  margin: 0  !important;  
+}
+
+
+#main-nav ul {
+  float:none;
+  margin: 0  !important;  
+}
+
+  #header #navigation {
+    float: left !important;
+    margin: 10px 0 0 !important;
+    clear: both;
+    border: 0;
+    background: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: auto;
+  }
+  
+  
+  
+.post img, .type-page img {
+    background: none repeat scroll 0 0 #fff;
+    border: none;
+    display: block;
+    height: auto !important;
+    max-width: 100%;
+    padding: 0;
+}
+
+
+.insidehead {
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	border: 1px solid #666;
+	width: 80%;
+	margin: 0 auto 18px;
+}
+
+.blueback {
+
+	padding: 20px;
+	background-color: #e9f6ff;
+}
+
+ul.products li.product img {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    margin: 0 auto 1em;
+    padding: 0em;
+    width: 100%;
+}
+
+.tp-revslider-mainul {
+  border: 1px solid #666;
+
+}
+
+.gray-border {
+  border: 1px solid #666;
+
+}
+
+ .post img.thumbnail, .type-page img.thumbnail {
+  border: 1px solid #666;
+    padding: 0;
+}
+
+.post img, .type-page img {
+  border: 1px solid #666;
+}
+
+dl.variation {
+	margin: 12px 0 0 0;
+}
+
+dl dd, dl dd p {
+    margin-bottom: 6px;
+}
+
+.centerfoot {
+	clear: both;
+	text-align: center;
+	float Left;
+	font-size: 11px;
+}
+
+
+.footer-widget-2 {
+	width: 50%;
+	float: right !important;
+}
+.stock { display: none; }
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 640px) {
+
+#owlid {
+	font-size: 28px;
+	text-align: center;
+	width: 100%;
+}
+
+#socdiv img {
+	float: none !important;
+    margin: 0 6px 6px;
+}
+
+#socdiv {
+	text-align: center;
+}
+
+#owllist li {
+    padding-left: 1em;
+    text-indent: -0.7em;
+    text-align: center;
+}
+
+#owllist {
+    clear: both;
+    width: 100%;
+   	text-align: center; 
+}
+
+ul.nav li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#navigation ul.nav li {
+    padding: 0 !important;
+    width: 100%;
+}
+
+ul.nav ul li {
+    float: none;
+    right: 0px !important;
+}
+
+#navigation ul.nav li {
+    right: 54%;
+}
+
+
+}
+
+<meta name="p:domain_verify" content="8537fd36245d37424e603f644a3edc80"/>
