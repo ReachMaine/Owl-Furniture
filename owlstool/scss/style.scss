@@ -42,14 +42,14 @@ body {
   #header #navigation ul.nav > li.current_page_item > a {
     color: #cc0000 !important;
   }
-  
-  
+
+
   h1, h2, h3, h4, h5, h6 {
     margin: 0 0 0.25em;
 }
 
 .ad-image-description span { font-size: 16px!important; }
-  
+
 
 #owlid {
 	width: 70%;
@@ -74,8 +74,8 @@ body {
     margin:0;
 }
 
-#owllist li { 
-    padding-left: 1em; 
+#owllist li {
+    padding-left: 1em;
     text-indent: -.7em;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 
-#navigation { 
+#navigation {
  float: left;
 clear: both;
   border-top-color:#E8E4E3 !important;
@@ -93,8 +93,8 @@ clear: both;
   border-top-width:1px  !important;
   margin-bottom: 0  !important;
   width: 100%;
-  
-  
+
+
 }
 
 
@@ -109,7 +109,7 @@ clear: both;
 .homelist ul {
     list-style: none;
     line-height: 2.75em;
-   	font-family: Raleway; 
+   	font-family: Raleway;
 }
 
 .homelist ul li:before {
@@ -133,7 +133,16 @@ clear: both;
 span.ginput_product_price,  span.ginput_product_price_label {
     display: none;
 }
-
+/* woocommerce / product */
+.product .variations_form {
+		.variations {
+			select {
+				padding: 2px 0px 2px 3px;
+				font-size: inherit;
+				margin-right: 6px;
+			}
+		}
+}
 .homelist {
 	font-size: 14px;
 	width: 86%;
@@ -197,7 +206,7 @@ span.ginput_product_price,  span.ginput_product_price_label {
 
 #owlid  a {
 	font-weight: normal !important;
-	
+
 }
 
 
@@ -246,22 +255,22 @@ ul.nav ul li {
 {
 	padding: 20px;
 	border: 4px #333 double;
-	
+
 }
 
 .newsbox h2
 {
 	text-align: center;
-	
+
 }
 
 
 .newsbox input.button {
 	background: none;
-	border: 4px #333 double;	
+	border: 4px #333 double;
 	color: #333333;
 	 box-shadow: none;
-    text-shadow: none;	 
+    text-shadow: none;
 }
 
 .newsbox .gform_wrapper .gform_footer {
@@ -272,18 +281,18 @@ ul.nav ul li {
 }
 
 #navigation ul {
-  margin: 0  !important;  
+  margin: 0  !important;
 }
 
 #navigation ul li{
 
-  margin: 0  !important;  
+  margin: 0  !important;
 }
 
 
 #main-nav ul {
   float:none;
-  margin: 0  !important;  
+  margin: 0  !important;
 }
 
   #header #navigation {
@@ -296,9 +305,9 @@ ul.nav ul li {
     box-shadow: none;
     width: auto;
   }
-  
-  
-  
+
+
+
 .post img, .type-page img {
     background: none repeat scroll 0 0 #fff;
     border: none;
@@ -365,7 +374,7 @@ dl dd, dl dd p {
 .centerfoot {
 	clear: both;
 	text-align: center;
-	float Left;
+	float: left;
 	font-size: 11px;
 }
 
@@ -378,57 +387,54 @@ dl dd, dl dd p {
 
 
 /* Smartphones (portrait) ----------- */
-@media only screen 
+@media only screen
 and (max-width : 640px) {
 
-#owlid {
-	font-size: 28px;
-	text-align: center;
-	width: 100%;
+	#owlid {
+		font-size: 28px;
+		text-align: center;
+		width: 100%;
+	}
+
+	#socdiv img {
+		float: none !important;
+	    margin: 0 6px 6px;
+	}
+
+	#socdiv {
+		text-align: center;
+	}
+
+	#owllist li {
+	    padding-left: 1em;
+	    text-indent: -0.7em;
+	    text-align: center;
+	}
+
+	#owllist {
+	    clear: both;
+	    width: 100%;
+	   	text-align: center;
+	}
+
+	ul.nav li a {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	#navigation ul.nav li {
+	    padding: 0 !important;
+	    width: 100%;
+	}
+
+	ul.nav ul li {
+	    float: none;
+	    right: 0px!important;
+	}
+
+	#navigation ul.nav li {
+	    right: 54%;
+	}
+
 }
-
-#socdiv img {
-	float: none !important;
-    margin: 0 6px 6px;
-}
-
-#socdiv {
-	text-align: center;
-}
-
-#owllist li {
-    padding-left: 1em;
-    text-indent: -0.7em;
-    text-align: center;
-}
-
-#owllist {
-    clear: both;
-    width: 100%;
-   	text-align: center; 
-}
-
-ul.nav li a {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-#navigation ul.nav li {
-    padding: 0 !important;
-    width: 100%;
-}
-
-ul.nav ul li {
-    float: none;
-    right: 0px !important;
-}
-
-#navigation ul.nav li {
-    right: 54%;
-}
-
-
-}
-
-<meta name="p:domain_verify" content="8537fd36245d37424e603f644a3edc80"/>
