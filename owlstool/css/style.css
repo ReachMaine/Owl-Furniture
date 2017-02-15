@@ -1,4 +1,4 @@
-@import url("../mystile/style.css");
+@charset "UTF-8";
 /*
 Theme Name: Owl Stool Store
 Version: 1.0
@@ -7,6 +7,7 @@ Author: Tom Saulnier
 Author URI: http://www.semide.com
 Template: mystile
 */
+@import url("../mystile/style.css");
 body {
   color: #333333; }
 
@@ -71,9 +72,9 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   clear: both;
   border-top-color: #E8E4E3 !important;
-  border-top-style: solid !important;
-  border-top-width: 1px !important;
-  margin-bottom: 0 !important;
+  border-top-style: solid  !important;
+  border-top-width: 1px  !important;
+  margin-bottom: 0  !important;
   width: 100%; }
 
 #homefeatured ul.products li.product {
@@ -138,6 +139,9 @@ span.ginput_product_price, span.ginput_product_price_label {
 @media only screen and (max-width: 1120px) {
   #navigation ul.nav li {
     padding: 0 20px !important; } }
+@media only screen and (max-width: 860px) {
+  #ergo-news-col {
+    width: 100% !important; } }
 @media only screen and (max-width: 1120px) {
   #owlid {
     float: left;
@@ -196,14 +200,14 @@ ul.nav ul li {
   text-align: center; }
 
 #navigation ul {
-  margin: 0 !important; }
+  margin: 0  !important; }
 
 #navigation ul li {
-  margin: 0 !important; }
+  margin: 0  !important; }
 
 #main-nav ul {
   float: none;
-  margin: 0 !important; }
+  margin: 0  !important; }
 
 #header #navigation {
   float: left !important;

@@ -189,10 +189,13 @@ span.ginput_product_price,  span.ginput_product_price_label {
     padding: 0 20px !important;
  }
 
-
-
 }
 
+@media only screen and (max-width: 860px) {
+	#ergo-news-col {
+	 width: 100% !important;
+	}
+}
 
 
 @media only screen and (max-width: 1120px) {
