@@ -181,6 +181,39 @@ span.ginput_product_price,  span.ginput_product_price_label {
     font-weight: bold;
 }
 
+//Workshop Page
+#product-5488 {
+	h1 {
+		text-align: center;
+		margin: 0 0 0 0.1em;
+	}
+	p.price {
+		display: none;
+	}
+	#tab-title-description {
+		display: none;
+	}
+	#tab-description {
+		background: none;
+		border: none;
+		padding-top: 0px;
+		h2 {
+			display: none;
+		}
+	}
+}
+
+.owl-workshop-lodging {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	.owl-workshop-lodging-location {
+		width: 47%;
+		div {
+			width: 100% !important;
+		}
+	}
+}
 
 @media only screen and (max-width: 1120px) {
 

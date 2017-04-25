@@ -136,6 +136,29 @@ span.ginput_product_price, span.ginput_product_price_label {
   color: #ff4800;
   font-weight: bold; }
 
+#product-5488 h1 {
+  text-align: center;
+  margin: 0 0 0 0.1em; }
+#product-5488 p.price {
+  display: none; }
+#product-5488 #tab-title-description {
+  display: none; }
+#product-5488 #tab-description {
+  background: none;
+  border: none;
+  padding-top: 0px; }
+  #product-5488 #tab-description h2 {
+    display: none; }
+
+.owl-workshop-lodging {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .owl-workshop-lodging .owl-workshop-lodging-location {
+    width: 47%; }
+    .owl-workshop-lodging .owl-workshop-lodging-location div {
+      width: 100% !important; }
+
 @media only screen and (max-width: 1120px) {
   #navigation ul.nav li {
     padding: 0 20px !important; } }
