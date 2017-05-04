@@ -43,12 +43,14 @@ Template: mystile
 body {
   color: #333333; }
 
+/*  header styling */
 #header {
   border-top-color: #E8E4E3;
   border-top-style: solid;
   border-top-width: 1px;
   margin-bottom: 1em;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  padding-top: 1.618em; }
 
 #header {
   padding-bottom: 0 !important;
@@ -74,17 +76,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px !important; }
 
 #owlid {
-  width: 70%;
   float: left;
-  text-align: center;
-  font-size: 36pt; }
+  font-size: 36pt;
+  line-height: 50px;
+  padding-left: 10px; }
+  #owlid .luvyr {
+    font-family: italianno;
+    text-align: center;
+    margin: 0 !important;
+    color: #CC0000;
+    font-size: .85em; }
 
 #owlid a:hover {
   color: #CC0000; }
 
 #owllist {
   width: 18%;
-  float: left; }
+  float: right; }
 
 #owllist ul {
   list-style: none;
@@ -109,6 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0  !important;
   width: 100%; }
 
+/*  end header styling */
 #homefeatured ul.products li.product {
   position: relative;
   width: 48.1% !important; }
@@ -148,14 +157,6 @@ span.ginput_product_price, span.ginput_product_price_label {
 
 .homelist ul li {
   margin-bottom: 14px; }
-
-.luvyr {
-  font-family: italianno;
-  text-align: center;
-  margin: 0 !important;
-  color: #CC0000;
-  font-size: .85em;
-  line-height: .85em; }
 
 #salediv ul.products li.product {
   position: relative;

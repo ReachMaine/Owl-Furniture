@@ -15,7 +15,7 @@ Template: mystile
 body {
 	color: #333333;
 }
-
+/*  header styling */
 
 #header {
   border-top-color:#E8E4E3;
@@ -23,6 +23,7 @@ body {
   border-top-width:1px;
  margin-bottom:1em;
  padding-bottom: 0;
+ padding-top: 1.618em;
 }
 
   #header {
@@ -55,10 +56,21 @@ body {
 
 
 #owlid {
-	width: 70%;
+	//width: 70%;
+	//width: 60%;
 	float: left;
-	text-align: center;
+	//text-align: center;
 	font-size:  36pt;
+	line-height: 50px;
+	padding-left: 10px;
+	.luvyr {
+		font-family: italianno;
+		text-align: center;
+		margin: 0 !important;
+		color: #CC0000;
+		font-size: .85em;
+		//line-height: .85em;
+	}
 }
 
 #owlid a:hover {
@@ -67,7 +79,7 @@ body {
 
 #owllist {
 	width: 18%;
-	float: left
+	float: right;
 }
 
 
@@ -88,6 +100,8 @@ body {
 }
 
 
+
+
 #navigation {
  float: left;
 clear: both;
@@ -100,6 +114,7 @@ clear: both;
 
 }
 
+/*  end header styling */
 
 #homefeatured ul.products li.product {
     position: relative;
@@ -158,15 +173,6 @@ span.ginput_product_price,  span.ginput_product_price_label {
 	margin-bottom: 14px;
 }
 
-
-.luvyr {
-	font-family: italianno;
-	text-align: center;
-	margin: 0 !important;
-	color: #CC0000;
-	font-size: .85em;
-	line-height: .85em;
-}
 
 
 #salediv ul.products li.product {
