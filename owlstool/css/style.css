@@ -23,6 +23,9 @@ Template: mystile
 .owl-tcenter {
   text-align: center; }
 
+.owl-red-title {
+  color: #a90000; }
+
 /* styling for gravity forms */
 #bottom-footer-widgets .gform_wrapper {
   margin-top: 0px; }
