@@ -8,6 +8,9 @@ Template: mystile
 */
 
 @import url("../mystile/style.css");
+@import "partials/colors";
+@import "partials/settings";
+@import "partials/gform";
 
 body {
 	color: #333333;
@@ -203,22 +206,6 @@ span.ginput_product_price,  span.ginput_product_price_label {
 				margin: 0;
 			}
 		}
-	}
-}
-@media only screen and (max-width: 767px) {
-	.homepage-top {
-		.su-column.su-column-size-1-3 {
-			img {
-				width: 100%;
-			}
-		}
-	}
-
-	#bottom-footer-widgets {
-		.col-3  {
-				width: 100%;
-				padding-right: 0px;
-			}
 	}
 }
 
@@ -459,22 +446,30 @@ dl dd, dl dd p {
 
 
 .footer-widget-2 {
-	width: 50%;
-	float: right !important;
+	/* width: 50%;
+	float: right !important; */
 }
 .stock { display: none; }
 
 /* ********** footer stuff. **********/
+#footer-widgets {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
 #bottom-footer-widgets {
 	.col-3  {
 	    width: 30.75%;
 			float: left;
 			padding-right: 2%;
 	  }
+	.col-3:nth-child(3) {
+		padding-left: 0px;
+	}
 }
 
 #footer {
-	padding-botom: 0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 }
 /* Smartphones (portrait) ----------- */
 @media only screen
@@ -527,7 +522,5 @@ and (max-width : 640px) {
 	    right: 54%;
 	}
 
-
-
-
 }
+@import "partials/media";

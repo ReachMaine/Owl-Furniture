@@ -1,0 +1,24 @@
+/* styling for gravity forms */
+#bottom-footer-widgets {
+  .gform_wrapper { // newsletter signup in footer widgets.
+    margin-top: 0px;
+    ul {
+      li.gfield:first-child {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      li {
+        .ginput_container {
+          margin-bottom: 10px;
+        }
+        .gfield_description {
+          padding-top: 0px;
+          padding-right: 0px;
+        }
+      }
+    }
+    .gform_footer {
+        margin-top: 0px;
+    }
+  }
+}

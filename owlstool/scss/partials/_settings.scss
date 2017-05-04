@@ -1,0 +1,15 @@
+/* styling for site wide classes we create */
+.owl-red-border {
+  border: 2px solid $owl-red;
+  padding: 15px 5px;
+}
+.owl-w-40p {
+  max-width: 40%;
+}
+.widget.owl-widget-close-bottom {
+  margin-bottom: 20px;
+
+}
+.owl-tcenter {
+  text-align: center;
+}
