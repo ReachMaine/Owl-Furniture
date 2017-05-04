@@ -143,6 +143,10 @@ span.ginput_product_price, span.ginput_product_price_label {
       width: 89px !important; }
   #product-7074 .summary.entry-summary {
     width: 69%; } }
+@media only screen and (max-width: 767px) {
+  #bottom-footer-widgets .col-3 {
+    width: 100%;
+    padding-right: 0px; } }
 #product-5488 h1 {
   text-align: center;
   margin: 0 0 0 0.1em; }
@@ -310,6 +314,15 @@ dl dd, dl dd p {
 
 .stock {
   display: none; }
+
+/* ********** footer stuff. **********/
+#bottom-footer-widgets .col-3 {
+  width: 30.75%;
+  float: left;
+  padding-right: 2%; }
+
+#footer {
+  padding-botom: 0px; }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 640px) {
