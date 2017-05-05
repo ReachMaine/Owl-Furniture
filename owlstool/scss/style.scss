@@ -158,9 +158,26 @@ span.ginput_product_price,  span.ginput_product_price_label {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	p {
+		margin-bottom: 0em;
+	}
+	p:empty {
+		display: none;
+	}
 	.homepage-product-category {
 		width: 30%;
-		padding: 1%;
+		padding: 2% 0;
+		img {
+			margin-bottom: .6em;
+		}
+		.homepage-category-title {
+			text-align: center;
+			color: #266743;
+			line-height: 1em;
+		}
+		.homepage-category-description {
+			text-align: center;
+		}
 	}
 }
 
@@ -228,6 +245,9 @@ span.ginput_product_price,  span.ginput_product_price_label {
 			}
 		}
 	}
+	.homepage-section {
+		margin: 0 5%;
+	}
 }
 
 //Workshop Page
@@ -281,6 +301,13 @@ span.ginput_product_price,  span.ginput_product_price_label {
 	}
 }
 
+@media only screen and (max-width: 480px) {
+	.homepage-section-categories {
+		.homepage-product-category {
+			width: 47%;
+		}
+	}
+}
 
 @media only screen and (max-width: 1120px) {
 
