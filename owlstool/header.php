@@ -88,19 +88,7 @@ global $woo_options, $woocommerce;
 <h3 class="luvyr">Love Your Back!</h3>
 </div>
 		<div id="owllist">
-<div id="socdiv">
-<?
-			    $facebook = esc_url( get_stylesheet_directory_uri() . '/images/facebook.png' );
-			    $twitter = esc_url( get_stylesheet_directory_uri() . '/images/twitter.png' );
-			    $linkedin = esc_url( get_stylesheet_directory_uri() . '/images/linkedin.png' );
-			    $share = esc_url( get_stylesheet_directory_uri() . '/images/share.png' );
-?>		
-	    <a href="https://www.facebook.com/Owl-Furniture-a-wing-of-Geoffrey-Warner-Studio-262800962600/"><img src="<?php echo $facebook; ?>" alt="facebook" width="24px" /></a>
-	    <a href="https://www.pinterest.com/geoffreywarner"><img src="https://www.owlstools.com/wp-content/plugins/social-media-feather/synved-social/image/social/regular/24x24/pinterest.png" alt="twitter" width="24px" /></a>
-	    <a href="http://www.linkedin.com/pub/geoffrey-warner/31/607/987"><img src="<?php echo $linkedin; ?>" alt="linkedin" width="24px" /></a>
-	    <a href="#socfoot"><img src="<?php echo $share; ?>" alt="rss" width="24px" /></a>
- 
- </div>
+
 <ul style="clear: both; margin-top: 6px;"><li>207-367-6555</li><li>ERGONOMIC DESIGN</li><li>DURABLE &amp; VERSATILE</li></ul>
 </div>
 
