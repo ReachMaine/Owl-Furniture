@@ -41,3 +41,23 @@ add_filter( 'woocommerce_shipping_free_shipping_is_available', 'my_free_shipping
 
 // to remove sku from everywhere....
 add_filter( 'wc_product_sku_enabled', '__return_false' );
+
+
+add_action('woocommerce_before_add_to_cart_form', 'display_free_shipping_text');
+function display_free_shipping_text() {
+	// set the product ids that are ineligible for free shipping
+	//Owl chair(46), peanut desk(48), stonington chair(165), standing desk(6361),
+	// pro 4 leg pro stools(6053), bar stools (5679), 4 Leg classic stool(32)
+	$ineligible = array( '46', '48', '165', '6361', '6053', '5679', '32' );
+	echo "<!-- ~zig~ -->";
+	if ( !in_array( get_the_ID(), $ineligible ) ) {
+		echo "<!-- yep ".get_the_ID()."-->";
+		$out_html = "";
+		$out_html .= '<div class="owl-free-shipping-text"><h3>Free Shipping</h3>';
+		$out_html .= "<p><strong>".get_the_title()."</strong> ships for free anywhere in the Continental U.S.</p>";
+		$out_html .= "</div>";
+		//echo $out_html;
+	} else {
+		echo "<!-- nope ".get_the_ID()."-->";
+	}
+} // end function display_free_shipping_text;
