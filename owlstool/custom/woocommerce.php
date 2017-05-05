@@ -12,8 +12,10 @@
 function my_free_shipping( $is_available ) {
 	global $woocommerce;
 
-	// set the product ids that are ineligible
-	$eligible = array( '5764', '508', '44', '34' ); // winter deals
+	// set the product ids that are ineligible for free shipping
+	//Owl chair(46), peanut desk(48), stonington chair(165), standing desk(6361),
+	// pro 4 leg pro stools(6053), bar stools (5679), 4 Leg classic stool(32)
+	$ineligible = array( '46', '48', '165', '6361', '6053', '5679', '32' );
 
 	// get cart contents
 	$cart_items = $woocommerce->cart->get_cart();
@@ -21,7 +23,7 @@ function my_free_shipping( $is_available ) {
 
 	// loop through the items looking for one in the ineligible array
 	foreach ( $cart_items as $key => $item ) {
-		if( !in_array( $item['product_id'], $eligible ) ) {
+		if( in_array( $item['product_id'], $ineligible ) ) {
 			 $is_available =  false;
 		}
 	}
