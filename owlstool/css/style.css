@@ -144,6 +144,15 @@ h1, h2, h3, h4, h5, h6 {
 span.ginput_product_price, span.ginput_product_price_label {
   display: none; }
 
+/* woocommerce / homepage categories */
+.homepage-section-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .homepage-section-categories .homepage-product-category {
+    width: 30%;
+    padding: 1%; }
+
 /* woocommerce / product */
 .product .variations_form .variations select {
   padding: 2px 0px 2px 3px;

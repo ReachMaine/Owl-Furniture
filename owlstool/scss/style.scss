@@ -151,6 +151,21 @@ clear: both;
 span.ginput_product_price,  span.ginput_product_price_label {
     display: none;
 }
+
+/* woocommerce / homepage categories */
+
+.homepage-section-categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.homepage-product-category {
+		width: 30%;
+		padding: 1%;
+	}
+}
+
+
+
 /* woocommerce / product */
 .product .variations_form {
 		.variations {
