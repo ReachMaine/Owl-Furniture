@@ -15,6 +15,41 @@ Template: mystile
 body {
 	color: #333333;
 }
+/* top menu */
+
+#top {
+	nav.col-full:before, nav.col-full:after {
+		content: none;
+	}
+	nav.col-full {
+		display: flex;
+		justify-content: space-between;
+		.owl-phone {
+			line-height: 2.5em;
+			a {
+				padding: .387em 1em;
+				color: #266743;
+			}
+			a:hover {
+				color: #afafaf !important;
+			}
+		}
+		#top-nav li {
+			a {
+				padding: .687em 1em;
+				color: #266743;
+			}
+			a:hover {
+				color: #afafaf !important;
+			}
+		}
+	}
+}
+
+#mobileMenu_top-nav {
+	display: none !important;
+}
+
 /*  header styling */
 
 #header {
@@ -95,10 +130,27 @@ body {
 }
 
 #owllist li:before {
-    content: "• ";
+    //content: "• ";
     color: #CC0000; /* or whatever color you prefer */
 }
 
+#owllist li.cart a:before {
+  font-family: 'WebSymbolsRegular';
+  display: inline-block;
+  font-size: .857em;
+  margin-right: .618em;
+	padding-left: 10px;
+  font-family: "icomoon";
+  font-size: 1em;
+  content: "£";
+  font-weight: normal;
+}
+
+#owllist li.cart a .contents {
+    padding: .2em .618em;
+    margin-left: 1em;
+    display: inline;
+  }
 
 
 
@@ -110,6 +162,12 @@ clear: both;
   border-top-width:1px  !important;
   margin-bottom: 0  !important;
   width: 100%;
+	a {
+		color: #266743;
+	}
+	a:hover {
+		color: #4a4a4a !important;
+	}
 
 
 }
