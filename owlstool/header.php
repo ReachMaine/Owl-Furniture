@@ -41,18 +41,21 @@ global $woo_options, $woocommerce;
 
 
 	<div id="top">
-		<nav class="col-full" role="navigation">
+  		<nav class="col-full" role="navigation">
+         <div class="owl-phone">
+          <a href="tel:207-367-6555">207-367-6555</a>
+        </div>
 			<?php if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'top-menu' ) ) { ?>
 			<?php wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'top-nav', 'menu_class' => 'nav fl', 'theme_location' => 'top-menu' ) ); ?>
 			<?php } ?>
 			<?php
-				if ( class_exists( 'woocommerce' ) ) {
+				/* if ( class_exists( 'woocommerce' ) ) {
 					echo '<ul class="nav wc-nav">';
 					woocommerce_cart_link();
 					echo '<li class="checkout"><a href="'.esc_url($woocommerce->cart->get_checkout_url()).'">'.__('Checkout','woothemes').'</a></li>';
 					echo get_search_form();
 					echo '</ul>';
-				}
+				}  */
 			?>
 		</nav>
 	</div><!-- /#top -->
@@ -88,9 +91,17 @@ global $woo_options, $woocommerce;
 <h3 class="luvyr">Love Your Back!</h3>
 </div>
 		<div id="owllist">
-
-<ul style="clear: both; margin-top: 6px;"><li>207-367-6555</li><li>ERGONOMIC DESIGN</li><li>DURABLE &amp; VERSATILE</li></ul>
-</div>
+      <ul style="clear: both; margin-top: 6px;">
+        <?php /* <li>207-367-6555</li> */ ?>
+        <li><a href="https://www.owlstools.com/ergonomics/">ERGONOMIC DESIGN</a></li>
+        <li><a href="https://www.owlstools.com/about-us/policies/">DURABLE &amp; VERSATILE</a></li>
+        <?php  if ( sizeof( $woocommerce->cart->cart_contents) > 0 ) {
+            echo '<li>';
+            echo '<a class="cart" href="' .wc_get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';
+            echo '</li>';
+         } ?>
+      </ul>
+    </div>
 
         <?php woo_nav_before(); ?>
 
