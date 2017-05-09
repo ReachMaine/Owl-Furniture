@@ -96,8 +96,8 @@ global $woo_options, $woocommerce;
         <li><a href="https://www.owlstools.com/ergonomics/">ERGONOMIC DESIGN</a></li>
         <li><a href="https://www.owlstools.com/about-us/policies/">DURABLE &amp; VERSATILE</a></li>
         <?php  if ( sizeof( $woocommerce->cart->cart_contents) > 0 ) {
-            echo '<li>';
-            echo '<a class="cart" href="' .wc_get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';
+            echo '<li class="cart">';
+            echo '<a  href="' .wc_get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';
             echo '</li>';
          } ?>
       </ul>
