@@ -93,8 +93,9 @@ global $woo_options, $woocommerce;
 		<div id="owllist">
       <ul style="clear: both; margin-top: 6px;">
         <?php /* <li>207-367-6555</li> */ ?>
-        <li><a href="https://www.owlstools.com/ergonomics/">ERGONOMIC DESIGN</a></li>
-        <li><a href="https://www.owlstools.com/about-us/policies/">DURABLE &amp; VERSATILE</a></li>
+        <li><a href="https://www.owlstools.com/ergonomics/">Ergonomic Design</a></li>
+        <li><a href="https://www.owlstools.com/about-us/policies/">Lifetime Guarantee</a></li>
+        <li><a href="https://www.owlstools.com/about-us/policies/">Free Shipping</a></li>
         <?php  if ( sizeof( $woocommerce->cart->cart_contents) > 0 ) {
             echo '<li class="cart">';
             echo '<a  href="' .wc_get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';
