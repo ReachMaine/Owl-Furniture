@@ -103,7 +103,7 @@ body {
 		text-align: center;
 		margin: 0 !important;
 		color: #CC0000;
-		font-size: .85em;
+		font-size: 1.2em;
 		//line-height: .85em;
 	}
 }
@@ -211,7 +211,9 @@ span.ginput_product_price,  span.ginput_product_price_label {
 }
 
 /* woocommerce / homepage categories */
-
+.homepage-intro-text {
+	padding-bottom: 15px;
+}
 .homepage-section-categories {
 	display: flex;
 	flex-wrap: wrap;
@@ -224,7 +226,7 @@ span.ginput_product_price,  span.ginput_product_price_label {
 	}
 	.homepage-product-category {
 		width: 30%;
-		padding: 2% 0;
+		padding: 2% 0 4% 0;
 		img {
 			margin-bottom: .6em;
 		}
@@ -232,6 +234,8 @@ span.ginput_product_price,  span.ginput_product_price_label {
 			text-align: center;
 			color: #266743;
 			line-height: 1em;
+			font-family: 'Open Sans';
+			font-weight: bold;
 		}
 		.homepage-category-description {
 			text-align: center;

@@ -3,6 +3,9 @@
 	#header #navigation ul.nav > li.parent:hover a:after {
 		color: #4a4a4a !important;
 	}
+	ul.nav li:first-child ul {
+		width: 17.5em;
+	}
 }
 @media only screen and (max-width: 767px) { // smaller than tablet.
 	.homepage-top {
