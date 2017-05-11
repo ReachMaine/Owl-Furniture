@@ -16,6 +16,10 @@
 		}
 	}
 
+	.cross-sells { //hiding "You may be interested in" at mobile
+		display: none;
+	}
+
 	#bottom-footer-widgets {
 		.col-3  {
 				width: 100%;
