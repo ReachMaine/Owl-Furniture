@@ -243,7 +243,10 @@ span.ginput_product_price,  span.ginput_product_price_label {
 	}
 }
 
-
+.woocommerce-loop-product__title {
+	font-family: 'Open Sans';
+	font-weight: bold;
+}
 
 /* woocommerce / product */
 .product .variations_form {
@@ -408,9 +411,12 @@ span.ginput_product_price,  span.ginput_product_price_label {
     float: left;
     list-style: outside none none;
     margin: 0;
-    padding: 0 49px;
+    padding: 0 45px;
     position: relative;
     right: 50%;
+		ul li {
+			padding: 0px 23px;
+		}
 }
 
 ul.nav ul li {
