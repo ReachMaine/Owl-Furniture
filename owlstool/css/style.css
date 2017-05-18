@@ -189,6 +189,9 @@ span.ginput_product_price, span.ginput_product_price_label {
   display: none; }
 
 /* woocommerce / homepage categories */
+.woocommerce-ordering {
+  display: none; }
+
 .homepage-intro-text {
   padding-bottom: 15px; }
 

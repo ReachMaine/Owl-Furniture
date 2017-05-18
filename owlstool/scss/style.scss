@@ -215,6 +215,10 @@ span.ginput_product_price,  span.ginput_product_price_label {
 }
 
 /* woocommerce / homepage categories */
+.woocommerce-ordering {
+	display: none; //hiding woocommerce sorting
+}
+
 .homepage-intro-text {
 	padding-bottom: 15px;
 }
