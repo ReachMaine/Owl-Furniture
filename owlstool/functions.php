@@ -1,19 +1,14 @@
 <?php
 //require_once(get_stylesheet_directory().'/custom/language.php');
 require_once(get_stylesheet_directory().'/custom/woocommerce.php');
-require_once(get_stylesheet_directory().'/custom/custom.php'); 
+require_once(get_stylesheet_directory().'/custom/custom.php');
 
 $preview = get_stylesheet_directory() . '/woocommerce/emails/woo-preview-emails.php';
 if(file_exists($preview)) {
     require $preview;
 }
 
-// remove additional product tab.
-    add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
-    function woo_remove_product_tabs( $tabs ) {
-        unset( $tabs['additional_information'] );   // Remove the additional information tab
-        return $tabs;
-    }
+
 // filter for no shipping
 add_filter( 'woocommerce_cart_no_shipping_available_html', 'change_no_shipping_text' ); // Alters message on Cart page
 add_filter( 'woocommerce_no_shipping_available_html', 'change_no_shipping_text' ); // Alters message on Checkout page

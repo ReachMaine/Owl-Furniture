@@ -3,7 +3,14 @@
 */
 // to remove sku from everywhere....
 ///add_filter( 'wc_product_sku_enabled', '__return_false' );
-
+// remove additional product tab.
+    add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+    function woo_remove_product_tabs( $tabs ) {
+        unset( $tabs['additional_information'] );   // Remove the additional information tab
+        unset( $tabs['description']);
+        unset( $tabs['reviews'] );
+        return $tabs;
+    }
 /**
  * Disable free shipping for select products
  *
@@ -14,8 +21,8 @@ function my_free_shipping( $is_available ) {
 
 	// set the product ids that are ineligible for free shipping
 	//Owl chair(46), peanut desk(48), stonington chair(165), standing desk(6361),
-	//bar stools (5679), 4 Leg classic stool(32)
-	$ineligible = array( '46', '48', '165', '6361', '5679' );
+	//bar stools (5679), 4 Leg classic stool(32). Pro 4 legged stool (7187)
+	$ineligible = array( '46', '48', '165', '6361', '5679','7187' );
 
 	// get cart contents
 	$cart_items = $woocommerce->cart->get_cart();
@@ -66,8 +73,8 @@ add_action('woocommerce_before_add_to_cart_form', 'display_free_shipping_text');
 function display_free_shipping_text() {
 	// set the product ids that are ineligible for free shipping
 	//Owl chair(46), peanut desk(48), stonington chair(165), standing desk(6361),
-	// bar stools (5679)
-	$ineligible = array( '46', '48', '165', '6361', '5679' );
+	// bar stools (5679). pro 4 legged bar stool(7187)
+	$ineligible = array( '46', '48', '165', '6361', '5679','7187' );
 	echo "<!-- ~zig~ -->";
 	if ( !in_array( get_the_ID(), $ineligible ) ) {
 		echo "<!-- yep ".get_the_ID()."-->";
