@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #owllist {
-	width: 18%;
+	width: 20%; // 18%
 	float: right;
 }
 
@@ -129,8 +129,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #owllist li {
-    padding-left: 1em;
-    text-indent: -.7em;
+    //padding-left: 1em;
+    //text-indent: -.7em;
 }
 
 #owllist li:before {
@@ -618,6 +618,9 @@ and (max-width : 640px) {
 	    padding-left: 1em;
 	    text-indent: -0.7em;
 	    text-align: center;
+			.owllist-exclusion {
+				font-weight: normal;
+			}
 	}
 
 	#owllist {

@@ -95,7 +95,7 @@ global $woo_options, $woocommerce;
         <?php /* <li>207-367-6555</li> */ ?>
         <li><a href="https://www.owlstools.com/ergonomics/">Ergonomic Design</a></li>
         <li><a href="https://www.owlstools.com/about-us/policies/">Lifetime Guarantee</a></li>
-        <li><a href="https://www.owlstools.com/about-us/policies/">Free Shipping</a></li>
+        <li><a href="https://www.owlstools.com/about-us/policies/">Free Shipping<span class="owllist-exclusion" style="font-size: .8em; font-weight:normal;"> (online purchases)</span></a></li>
         <?php  if ( sizeof( $woocommerce->cart->cart_contents) > 0 ) {
             echo '<li class="cart">';
             echo '<a  href="' .wc_get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';

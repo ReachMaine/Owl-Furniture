@@ -116,17 +116,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #CC0000; }
 
 #owllist {
-  width: 18%;
+  width: 20%;
   float: right; }
 
 #owllist ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-
-#owllist li {
-  padding-left: 1em;
-  text-indent: -.7em; }
 
 #owllist li:before {
   color: #CC0000;
@@ -469,6 +465,8 @@ dl dd, dl dd p {
     padding-left: 1em;
     text-indent: -0.7em;
     text-align: center; }
+    #owllist li .owllist-exclusion {
+      font-weight: normal; }
 
   #owllist {
     clear: both;
