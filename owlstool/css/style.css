@@ -242,6 +242,9 @@ span.ginput_product_price, span.ginput_product_price_label {
   color: #ff4800;
   font-weight: bold; }
 
+section.up-sells.upsells.products {
+  clear: both; }
+
 @media only screen and (min-width: 768px) {
   .product .images.gallery_container {
     width: 29%; }
