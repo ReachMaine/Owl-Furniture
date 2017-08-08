@@ -21,8 +21,8 @@ function my_free_shipping( $is_available ) {
 
 	// set the product ids that are ineligible for free shipping
 	//Owl chair(46), peanut desk(48), stonington chair(165), standing desk(6361),
-	//bar stools (5679), 4 Leg classic stool(32). Pro 4 legged stool (7187)
-	$ineligible = array( '46', '48', '165', '6361', '5679','7187' );
+	//bar stools (5679), 4 Leg classic stool(32). Pro 4 legged stool (7187), Walnut Standing Desk (7469)
+	$ineligible = array( '46', '48', '165', '6361', '5679','7187', '7469' );
 
 	// get cart contents
 	$cart_items = $woocommerce->cart->get_cart();
@@ -73,8 +73,8 @@ add_action('woocommerce_before_add_to_cart_form', 'display_free_shipping_text');
 function display_free_shipping_text() {
 	// set the product ids that are ineligible for free shipping
 	//Owl chair(46), peanut desk(48), stonington chair(165), standing desk(6361),
-	// bar stools (5679). pro 4 legged bar stool(7187)
-	$ineligible = array( '46', '48', '165', '6361', '5679','7187' );
+	// bar stools (5679). pro 4 legged bar stool(7187), Walnut Standing Desk (7469)
+	$ineligible = array( '46', '48', '165', '6361', '5679','7187', '7469' );
 	echo "<!-- ~zig~ -->";
 	if ( !in_array( get_the_ID(), $ineligible ) ) {
 		echo "<!-- yep ".get_the_ID()."-->";
