@@ -7,7 +7,7 @@
     add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
     function woo_remove_product_tabs( $tabs ) {
         unset( $tabs['additional_information'] );   // Remove the additional information tab
-        unset( $tabs['description']);
+        //unset( $tabs['description']);
         unset( $tabs['reviews'] );
         return $tabs;
     }
@@ -27,7 +27,6 @@ function my_free_shipping( $is_available ) {
 
 	// get cart contents
 	$cart_items = $woocommerce->cart->get_cart();
-
 
 	// loop through the items looking for one in the ineligible array
 	foreach ( $cart_items as $key => $item ) {
@@ -83,5 +82,5 @@ function display_free_shipping_text() {
 		$out_html .= "<p>This product ships for free anywhere in the Continental U.S.</p>";
 		$out_html .= "</div>";
 		echo $out_html;
-	} 
+	}
 } // end function display_free_shipping_text;
