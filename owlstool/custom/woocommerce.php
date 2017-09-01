@@ -24,13 +24,15 @@ function my_free_shipping( $is_available ) {
 	//bar stools (5679), 4 Leg classic stool(32). Pro 4 legged stool (7187), Walnut Standing Desk (7469)
   // both work stations (7706 and 7707)
 	$ineligible = array( '46', '48', '165', '6361', '5679','7187', '7469', '7706', '7707' );
+  // now only want metal based stools & lumbar support accessory to have free shipping.
+  $eligible = array( '5764', '5690', '508', '44', '5704','34', '47' );
 
 	// get cart contents
 	$cart_items = $woocommerce->cart->get_cart();
 
 	// loop through the items looking for one in the ineligible array
 	foreach ( $cart_items as $key => $item ) {
-		if( in_array( $item['product_id'], $ineligible ) ) {
+		if( !in_array( $item['product_id'], $eligible ) ) {
 			 $is_available =  false;
 		}
 	}
@@ -76,7 +78,9 @@ function display_free_shipping_text() {
 	// bar stools (5679). pro 4 legged bar stool(7187), Walnut Standing Desk (7469)
   // both work stations (7706 and 7707)
 	$ineligible = array( '46', '48', '165', '6361', '5679','7187', '7469', '7706', '7707' );
-	if ( !in_array( get_the_ID(), $ineligible ) ) {
+  // now only want metal based stools & lumbar support accessory to have free shipping.
+  $eligible = array( '5764', '5690', '508', '44', '5704','34', '47' );
+	if ( in_array( get_the_ID(), $eligible ) ) {
 		$out_html = "";
 		$out_html .= '<div class="owl-free-shipping-text"><h3>Free Shipping</h3>';
 		$out_html .= "<p>This product ships for free anywhere in the Continental U.S.</p>";
