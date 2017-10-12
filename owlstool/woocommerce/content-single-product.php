@@ -72,11 +72,16 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 </div><!-- #product-<?php the_ID(); ?> -->
 
-<?php do_action( 'woocommerce_after_single_product' ); 
+<?php do_action( 'woocommerce_after_single_product' );
+/* zig 12Oct17 - check for saleproducts before printing header (assumes 4columns ) */
+$owl_sale_products = do_shortcode( '[sale_products per_page="4"]');
+if ($owl_sale_products != '<div class="woocommerce columns-4 "></div>') { // if not empty div
+	echo '<div class="owl-on-sale">';
+	echo "<hr><h3>On Sale Now!!</h3>";
+	//echo do_shortcode( '[sale_products per_page="4"]' );
+	echo $owl_sale_products;
+	echo "</div>";
+}
 
-echo "<hr><h3>On Sale Now!!</h3>";
-
-
-echo do_shortcode( '[sale_products per_page="4"]' );
 
 ?>
