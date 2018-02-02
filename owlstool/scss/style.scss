@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
   #header {
     padding-bottom: 0 !important;
-    padding-top: 3.631em;
+    //padding-top: 3.631em;
   }
 
 #header hgroup {
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-left: 10px;
   font-family: "icomoon";
   font-size: 1em;
-  content: "£";
+  content: "\e001"; // "\e001"; // should be shopping cart.
   font-weight: normal;
 }
 

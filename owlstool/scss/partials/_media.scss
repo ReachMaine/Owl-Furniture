@@ -1,5 +1,13 @@
 /* styling for media queries */
 @media only screen and (min-width: 768px) {  // tablet & bigger
+	.hide-not-mobile {
+		display: none;
+	}
+
+	#header {
+		//padding-bottom: 0 !important;
+		padding-top: 3.631em;
+	}
 	#header #navigation ul.nav > li.parent:hover a:after {
 		color: #4a4a4a !important;
 	}
@@ -8,6 +16,10 @@
 	}
 }
 @media only screen and (max-width: 767px) { // smaller than tablet.
+
+	ul.nav li.hide-mobile-menu > a {
+		display: none;
+	}
 	.homepage-top {
 		.su-column.su-column-size-1-3 {
 			img {
