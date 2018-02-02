@@ -494,6 +494,10 @@ dl dd, dl dd p {
   .hide-not-mobile {
     display: none; }
 
+  #top {
+    padding-top: .5em;
+    padding-bottom: .5em; }
+
   #header {
     padding-top: 3.631em; }
 
@@ -503,6 +507,18 @@ dl dd, dl dd p {
   ul.nav li:first-child ul {
     width: 17.5em; } }
 @media only screen and (max-width: 767px) {
+  #top {
+    padding-top: .5em;
+    padding-bottom: .5em; }
+    #top .owl-phone {
+      padding-top: 10px; }
+    #top nav.col-full #top-nav {
+      display: block;
+      list-style: none;
+      margin-bottom: 0px; }
+      #top nav.col-full #top-nav li a {
+        padding: 0px; }
+
   ul.nav li.hide-mobile-menu > a {
     display: none; }
 

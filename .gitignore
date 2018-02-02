@@ -5,6 +5,9 @@ ehthumbs.db
 # zig files & folders to ignore
 .sass-cache/
 compass_app_log.txt
+*.php-*
+*.css-*
+*.scss-*
 
 # Folder config file
 Desktop.ini

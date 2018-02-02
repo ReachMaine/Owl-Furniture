@@ -3,7 +3,10 @@
 	.hide-not-mobile {
 		display: none;
 	}
-
+  #top {
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
 	#header {
 		//padding-bottom: 0 !important;
 		padding-top: 3.631em;
@@ -16,7 +19,23 @@
 	}
 }
 @media only screen and (max-width: 767px) { // smaller than tablet.
-
+	#top {
+		padding-top: .5em;
+		padding-bottom: .5em;
+		.owl-phone {
+			padding-top: 10px;
+		}
+		nav.col-full #top-nav {
+			display: block;
+			list-style: none;
+			margin-bottom: 0px;
+			li {
+				a {
+					padding: 0px;
+				}
+			}
+		}
+	}
 	ul.nav li.hide-mobile-menu > a {
 		display: none;
 	}
