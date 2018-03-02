@@ -1,7 +1,7 @@
 /* styling for media queries */
 @media only screen and (min-width: 768px) {  // tablet & bigger
 	.hide-not-mobile {
-		display: none;
+		display: none!important;
 	}
   #top {
 		padding-top: .5em;
@@ -18,24 +18,30 @@
 		width: 17.5em;
 	}
 }
+
 @media only screen and (max-width: 767px) { // smaller than tablet.
+
 	#top {
 		padding-top: .5em;
 		padding-bottom: .5em;
 		.owl-phone {
 			padding-top: 10px;
+			font-size: 18px;
+			margin: auto;
 		}
+		/* zig xout -  caused errors with mobile nav.
 		nav.col-full #top-nav {
-			display: block;
-			list-style: none;
-			margin-bottom: 0px;
+			/*display: block;
+			  list-style: none;
 			li {
 				a {
 					padding: 0px;
 				}
 			}
-		}
-	}
+		} //end nav.col-ful #top-nav
+		*/
+	} // end top
+
 	ul.nav li.hide-mobile-menu > a {
 		display: none;
 	}
@@ -58,3 +64,4 @@
 			}
 	}
 }
+/* end media */
