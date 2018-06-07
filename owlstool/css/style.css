@@ -127,14 +127,12 @@ h1, h2, h3, h4, h5, h6 {
   /* or whatever color you prefer */ }
 
 #owllist li.cart a:before {
-  font-family: 'WebSymbolsRegular';
+  font-family: FontAwesome;
   display: inline-block;
   font-size: .857em;
   margin-right: .618em;
-  padding-left: 10px;
-  font-family: "icomoon";
   font-size: 1em;
-  content: "\e001";
+  content: "\f07a";
   font-weight: normal; }
 
 #owllist li.cart a .contents {

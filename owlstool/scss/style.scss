@@ -139,14 +139,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #owllist li.cart a:before {
-  font-family: 'WebSymbolsRegular';
+	font-family:  FontAwesome;
   display: inline-block;
   font-size: .857em;
   margin-right: .618em;
-	padding-left: 10px;
-  font-family: "icomoon";
   font-size: 1em;
-  content: "\e001"; // "\e001"; // should be shopping cart.
+  content: "\f07a"; // "\e001"; // should be shopping cart.
   font-weight: normal;
 }
 
